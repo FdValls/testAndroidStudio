@@ -12,13 +12,12 @@
         tools:layout="@layout/fragment_primer_fragmento" >
         <action
             android:id="@+id/action_primerFragmento_to_segundoFragmento"
-            app:destination="@id/segundoFragmento" />
+            app:destination="@id/segundoFragmento"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_primerFragmento_to_tercerFragmento"
-            app:destination="@id/tercerFragmento" />
-        <action
-            android:id="@+id/action_primerFragmento_to_cuartoFragmento"
-            app:destination="@id/cuartoFragmento" />
+            app:destination="@id/tercerFragmento"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/segundoFragmento"
@@ -28,6 +27,9 @@
         <action
             android:id="@+id/action_segundoFragmento_to_primerFragmento"
             app:destination="@id/primerFragmento" />
+        <argument
+            android:name="param1"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/tercerFragmento"
@@ -37,14 +39,8 @@
         <action
             android:id="@+id/action_tercerFragmento_to_primerFragmento"
             app:destination="@id/primerFragmento" />
-    </fragment>
-    <fragment
-        android:id="@+id/cuartoFragmento"
-        android:name="com.example.practicandonav.fragments.CuartoFragmento"
-        android:label="fragment_cuarto_fragmento"
-        tools:layout="@layout/fragment_cuarto_fragmento" >
-        <action
-            android:id="@+id/action_cuartoFragmento_to_primerFragmento"
-            app:destination="@id/primerFragmento" />
+        <argument
+            android:name="Persona"
+            app:argType="com.example.practicandonav.Person" />
     </fragment>
 </navigation>

@@ -4,4 +4,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="button">Button</string>
     <string name="segundo_fragmento">Segundo Fragmento</string>
+    <string name="fragmento_2">Fragmento 2</string>
+    <string name="return_main">Return main</string>
 </resources>
