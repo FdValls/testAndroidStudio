@@ -10,8 +10,8 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.example.practicandonav.Person
 import com.example.practicandonav.R
+import com.example.practicandonav.entities.Person
 
 
 class PrimerFragmento : Fragment() {
@@ -64,6 +64,8 @@ class PrimerFragmento : Fragment() {
 
             vistaFragment.findNavController().navigate(action)
         }
+
+
 
         //Vista 2
         btnFragmentVista2.setOnClickListener {

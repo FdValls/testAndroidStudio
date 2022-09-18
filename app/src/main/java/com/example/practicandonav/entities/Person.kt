@@ -1,4 +1,4 @@
-package com.example.practicandonav
+package com.example.practicandonav.entities
 
 import java.io.Serializable
 

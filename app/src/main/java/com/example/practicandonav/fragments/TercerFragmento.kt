@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.findNavController
-import com.example.practicandonav.Person
+import com.example.practicandonav.entities.Person
 import com.example.practicandonav.R
 import java.io.Serializable
 
